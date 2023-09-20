@@ -23,6 +23,7 @@ ncol(early_january_weather)
 mean(early_january_weather$temp)
 ```
 **Answer**
+
 `1. Variable of Dataset: day, hour, temp, dewp,humid,wind_dir, wind_speed,wind_gust,precip, pressure, visib, time_hour`
 
 `2. The Size of Dataset: row = 358; column = 15`
@@ -39,9 +40,9 @@ ggsave("Problem_1_scatter.pdf")
 
 #Problem 2
 
+## Creat a data frame
 ```{r}
 random_sample = rnorm(10)
-length(random_sample)
 
 logical_vector <- random_sample > 0
 
@@ -50,7 +51,6 @@ character_vector <- letters[1:10]
 factor_vector <- factor(rep(c("red", "green","blue"), times = c(4,2,4)))
 ```
 
-## Creat a data frame
 ```{r}
 df <- data.frame(random_sample, logical_vector, character_vector, factor_vector)
 ```
