@@ -8,7 +8,12 @@ date: "2023-09-20"
 #Problem 1
 ```{r}
 library(moderndive)
-
+library(tidyverse)
 data("early_january_weather")
+```
+
+
+```{r yx_scatter}
+ggplot(early_january_weather, aes(x = time_hour, y = temp, color = "red")) + geom_point()
 ```
 
