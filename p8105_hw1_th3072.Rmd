@@ -1,0 +1,14 @@
+---
+title: "p8105_hw1_th3072"
+Author: Tianyou He
+output: github_document
+date: "2023-09-20"
+---
+
+#Problem 1
+```{r}
+library(moderndive)
+
+data("early_january_weather")
+```
+
