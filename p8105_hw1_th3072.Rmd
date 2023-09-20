@@ -45,17 +45,19 @@ As can be seen from the scatterplot, the temperature tends to increase over time
 random_sample = rnorm(10)
 length(random_sample)
 
-logical_vector <- random_sample >0
+logical_vector <- random_sample > 0
 
 character_vector <- letters[1:10]
 
 factor_vector <- factor(rep(c("red", "green","blue"), times = c(4,2,4)))
 ```
 
+## Creat a data frame
 ```{r}
 df <- data.frame(random_sample, logical_vector, character_vector, factor_vector)
 ```
 
+## Mean of each vector
 ```{r}
 mean(random_sample)
 mean(pull(df,logical_vector))
@@ -63,10 +65,10 @@ mean(pull(df,character_vector))
 mean(pull(df,factor_vector))
 ```
 
-
+## Change each vector into numeric vector
 ```{r}
 numeric_logical <- as.numeric(logical_vector)
-numeric_logical <- as.numeric(character_vector)
-numeric_logical <- as.numeric(factor_vector)
+numeric_character <- as.numeric(character_vector)
+numeric_factro <- as.numeric(factor_vector)
 ```
 
