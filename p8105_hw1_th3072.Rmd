@@ -1,6 +1,6 @@
 ---
 title: "p8105_hw1_th3072"
-author: "Tianyou He"
+author: "Tianyou_He"
 output: github_document
 date: "2023-09-20"
 ---
@@ -63,7 +63,7 @@ mean(pull(df,character_vector))
 mean(pull(df,factor_vector))
 ```
 
-### Change each vector into numeric vector
+### Change each vector into numeric 
 ```{r}
 numeric_logical <- as.numeric(logical_vector)
 numeric_character <- as.numeric(character_vector)
