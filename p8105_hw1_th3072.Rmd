@@ -1,6 +1,6 @@
 ---
 title: "p8105_hw1_th3072"
-Author: Tianyou He
+author: "Tianyou He"
 output: github_document
 date: "2023-09-20"
 ---
