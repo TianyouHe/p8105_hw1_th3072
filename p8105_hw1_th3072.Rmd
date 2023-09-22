@@ -62,16 +62,22 @@ mean(pull(df,character_vector))
 mean(pull(df,factor_vector))
 ```
 
-Only random_sample and logical_vector work. The random sample work just because it has the specific number. 
+## Change each vector into numeric 
+```{r}
+numeric_logical <- as.numeric(logical_vector)
+numeric_character <- as.numeric(character_vector)
+numeric_factor <- as.numeric(factor_vector)
+```
+
+Random_sample and logical_vector work, but character_vector and factor_vector not work. 
+
+The random_sample work just because it has the specific number. 
 
 Although logical_vector only has TRUE or FALSE, the system consider TRUE = 1 and FALSE = 0 for the data set. Therefore, the mean for logical_vector also work. 
 
 But for Character_vector and factor_vector. Mean for `a, b, c, d,...` and `Red, Red, Red, Red, Green...` does not exist (they are not numeric or logical). Therefore, we got NA here. 
 
-## Change each vector into numeric 
-```{r}
-numeric_logical <- as.numeric(logical_vector)
-numeric_character <- as.numeric(character_vector)
-numeric_factro <- as.numeric(factor_vector)
-```
+as.numeric () change the logical, character and factor vector into a numeric vector
+
+This explains that only mean of numeric and logical vector can be found. 
 
